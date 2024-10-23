@@ -1,0 +1,49 @@
+.analytics-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; 
+  }
+  
+ 
+  .chart-section {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+ 
+  h2 {
+    text-align: center;
+    grid-column: 1 / -1; 
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .analytics-container {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  
+  @media (max-width: 600px) {
+    .analytics-container {
+      grid-template-columns: 1fr; 
+      grid-gap: 15px;
+    }
+  
+    h2 {
+      font-size: 1.5rem; 
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+    }
+  
+    .chart-section {
+      padding: 10px;
+    }
+  }
+  

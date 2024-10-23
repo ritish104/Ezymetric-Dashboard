@@ -1,0 +1,86 @@
+
+.leads {
+    padding: 20px;
+    
+  }
+  
+  
+  table {
+    width: 1000px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  table th {
+    background-color: #007bff;
+    color: white;
+    text-align: left;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+  }
+  
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+
+  table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  
+  table button {
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+  }
+  
+  table button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    table thead {
+      display: none;
+    }
+  
+    table tr {
+      margin-bottom: 15px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    table td {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border: none;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      color: #333;
+    }
+  }
+  
